@@ -1,4 +1,5 @@
 import React from "react";
+import heroImage from "../images/heroImage.jpg";
 
 const HeroImage = () => {
   return (
@@ -14,8 +15,8 @@ const HeroImage = () => {
         </div>
         <img
           className="h-[250px] sm:h-[500px] w-full"
-          src="https://images.unsplash.com/photo-1551782450-17144efb9c50"
-          alt=""
+          src={heroImage}
+          alt="Hero"
         />
       </div>
     </div>

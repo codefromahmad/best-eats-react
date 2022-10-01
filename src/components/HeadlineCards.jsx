@@ -1,4 +1,7 @@
 import React from "react";
+import card1 from "../images/card1.jpg";
+import card2 from "../images/card2.jpg";
+import card3 from "../images/card3.jpg";
 
 const HeadlineCards = () => {
   const cards = [
@@ -6,19 +9,19 @@ const HeadlineCards = () => {
       id: 1,
       name: `Sun's Out BOGO's Out`,
       text: "Through 8/26",
-      img: "https://images.unsplash.com/photo-1549611016-3a70d82b5040",
+      img: card1,
     },
     {
       id: 2,
       name: `New Restaurant`,
       text: "Added Daily",
-      img: "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9",
+      img: card2,
     },
     {
       id: 3,
       name: `We Deliver Deserts Too`,
       text: "Tasty Treats",
-      img: "https://images.unsplash.com/photo-1547584370-2cc98b8b8dc8",
+      img: card3,
     },
   ];
   return (
