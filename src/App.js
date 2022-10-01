@@ -1,3 +1,4 @@
+import Categories from "./components/Categories";
 import Food from "./components/Food";
 import HeadlineCards from "./components/HeadlineCards";
 import HeroImage from "./components/HeroImage";
@@ -10,6 +11,7 @@ function App() {
       <HeroImage />
       <HeadlineCards />
       <Food />
+      <Categories />
       <div className="py-20 my-24 bg-black">ok</div>
     </div>
   );

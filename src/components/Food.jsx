@@ -77,7 +77,7 @@ const Food = () => {
   ];
   return (
     <div className="w-full mx-auto">
-      <div className="max-w-[990px] mx-4 md:mx-auto sm:mx-6">
+      <div className="max-w-[990px] mx-4 lg:mx-auto sm:mx-6">
         <h1 className="text-orange-500 font-bold text-3xl text-center py-3">
           Top Rated Menu Items
         </h1>
@@ -90,7 +90,7 @@ const Food = () => {
                   <li
                     onClick={() => filterType(cat)}
                     key={id}
-                    className="px-2 sm:px-4 mr-[2px] py-[1px] sm:py-1 cursor-pointer border-orange-500 hover:bg-orange-500 hover:text-white duration-200 border-[1px] rounded-full text-orange-500"
+                    className="px-2 sm:px-4 mr-[2px] py-[1px] sm:py-1 cursor-pointer border-orange-500 hover:bg-orange-500 hover:text-white  duration-200 border-[1px] rounded-full text-orange-500"
                   >
                     {name}
                   </li>

@@ -22,7 +22,7 @@ const HeadlineCards = () => {
     },
   ];
   return (
-    <div className="max-w-[990px] py-10 mx-10 sm:mx-20 md:mx-auto relative grid gap-8 grid-cols-1 md:grid-cols-3">
+    <div className="max-w-[990px] py-10 mx-10 sm:mx-20 lg:mx-auto relative grid gap-8 grid-cols-1 md:grid-cols-3">
       {cards.map(({ id, name, text, img }) => (
         <div key={id} className="rounded-xl relative">
           <div className="absolute px-3 py-3 w-full h-full text-white bg-black/50 rounded-xl">
