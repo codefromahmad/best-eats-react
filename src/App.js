@@ -1,3 +1,4 @@
+import HeadlineCards from "./components/HeadlineCards";
 import HeroImage from "./components/HeroImage";
 import NavBar from "./components/NavBar";
 
@@ -6,6 +7,7 @@ function App() {
     <div>
       <NavBar />
       <HeroImage />
+      <HeadlineCards />
     </div>
   );
 }
