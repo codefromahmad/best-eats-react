@@ -10,7 +10,7 @@ function App() {
       <HeroImage />
       <HeadlineCards />
       <Food />
-      <div className="py-20 bg-black">ok</div>
+      <div className="py-20 my-24 bg-black">ok</div>
     </div>
   );
 }
