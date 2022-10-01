@@ -52,11 +52,9 @@ const NavBar = () => {
         <div className="max-w-screen-lg h-full mx-auto bg-white">
           <div className="flex justify-between w-full h-full items-center">
             <div className="flex items-center mx-1">
-              <HiMenu
-                size={30}
-                className=" w-12 cursor-pointer hover:bg-slate-300 hover:rounded-full"
-                onClick={() => setNav(!nav)}
-              />
+              <span className="cursor-pointer hover:bg-slate-300 hover:rounded-full p-2">
+                <HiMenu size={30} onClick={() => setNav(!nav)} />
+              </span>
               <p className="text-xl sm:text-2xl md:3xl mx-1">
                 Best<span className="font-bold"> Eats</span>
               </p>
@@ -85,35 +83,42 @@ const NavBar = () => {
         </div>
       </div>
       {nav && (
-        <div>
-          <div className="w-full bg-black/80 fixed top-0 left-0 z-10 h-screen"></div>
-          <div className="h-screen absolute left-0 py-5 top-0 w-[300px] bg-white z-10">
-            <div className="flex justify-between items-center px-4 ">
-              <p className="text-2xl">
-                Best <span className="font-bold">Eats</span>
-              </p>
-              <GrClose
-                size={22}
-                className="cursor-pointer w-12 hover:bg-slate-300 hover:rounded-full"
-                onClick={() => setNav(!nav)}
-              />
-            </div>
-            <ul>
-              {links.map(({ id, icon, title }) => (
-                <li key={id}>
-                  <a
-                    href=""
-                    className="flex items-center p-2 mx-2 hover:bg-slate-200 hover:rounded-md"
-                  >
-                    {icon}
-                    <p className="pl-2">{title}</p>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div className="cursor-pointer z-10 left-64 top-0 mt-8 absolute hover:bg-slate-300 hover:rounded-full p-2">
+          <GrClose size={20} onClick={() => setNav(!nav)} />
         </div>
       )}
+      <>
+        <div
+          className={`w-full ${
+            nav ? "block" : "hidden"
+          } bg-black/80 fixed top-0 left-0  h-screen`}
+        ></div>
+        <div
+          className={`h-screen absolute ${
+            nav ? "left-0" : "-left-[100%]"
+          } ease-in-out duration-500 py-5 top-0 w-[300px] bg-white`}
+        >
+          <div className="flex justify-between items-center p-4 ">
+            <p className="text-2xl">
+              Best <span className="font-bold">Eats</span>
+            </p>
+            <span></span>
+          </div>
+          <ul>
+            {links.map(({ id, icon, title }) => (
+              <li key={id}>
+                <a
+                  href=""
+                  className="flex items-center p-2 mx-2 hover:bg-slate-200 duration-200 hover:rounded-md"
+                >
+                  {icon}
+                  <p className="pl-2">{title}</p>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </>
     </>
   );
 };
