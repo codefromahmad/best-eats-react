@@ -71,37 +71,35 @@ const NavBar = () => {
               <HiOutlineSearch size={20} className="px-1 w-8" />
               <input
                 type="text"
-                className="text-xs sm:text-lg bg-transparent p-2 focus:outline-none"
+                className="text-xs sm:text-lg bg-transparent px-2 py-1 md:py-2 focus:outline-none"
                 placeholder="Search foods..."
               />
             </div>
-            <div className="flex items-center rounded-full bg-black hover:bg-gray-700 p-2 cursor-pointer duration-200 mx-1">
+            <div className="flex items-center rounded-full bg-black hover:bg-gray-700 p-2 cursor-pointer duration-200 mx-1 mr-4">
               <HiShoppingCart className="text-white" />
               <p className="text-white px-2 hidden sm:block">Cart</p>
             </div>
           </div>
         </div>
       </div>
-      {nav && (
-        <div className="cursor-pointer z-10 left-64 top-0 mt-8 absolute hover:bg-slate-300 hover:rounded-full p-2">
-          <GrClose size={20} onClick={() => setNav(!nav)} />
-        </div>
-      )}
       <>
         <div
           className={`w-full ${
             nav ? "block" : "hidden"
-          } bg-black/80 fixed top-0 left-0  h-screen`}
+          } bg-black/80 fixed top-0 z-10 left-0  h-screen`}
         ></div>
         <div
           className={`h-screen absolute ${
             nav ? "left-0" : "-left-[100%]"
-          } ease-in-out duration-500 py-5 top-0 w-[300px] bg-white`}
+          } ease-in-out duration-500 py-5 z-10 top-0 w-[300px] bg-white`}
         >
           <div className="flex justify-between items-center p-4 ">
             <p className="text-2xl">
               Best <span className="font-bold">Eats</span>
             </p>
+            <div className="cursor-pointer z-200 left-64 top-0 mt-8 absolute hover:bg-slate-300 hover:rounded-full p-2">
+              <GrClose size={20} onClick={() => setNav(!nav)} />
+            </div>
             <span></span>
           </div>
           <ul>
