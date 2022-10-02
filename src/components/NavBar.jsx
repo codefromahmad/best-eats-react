@@ -67,7 +67,7 @@ const NavBar = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-center sm:w-[250px] sd:w-[200px] sl:w-[240px] w-[160px] bg-slate-300 rounded-full">
+            <div className="flex items-center sm:w-[250px] sd:w-[200px] sl:w-[240px] w-[160px] md:w-[400px] bg-slate-300 rounded-full">
               <HiOutlineSearch size={20} className="w-8" />
               <input
                 type="text"
