@@ -9,10 +9,8 @@ const Food = () => {
     if (!cat) {
       setFoods(data);
     } else if (price.includes(cat)) {
-      console.log("price");
       setFoods(data.filter((item) => item.price === cat));
     } else {
-      console.log("type");
       setFoods(data.filter((item) => item.category === cat));
     }
   }, []);

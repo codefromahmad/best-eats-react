@@ -130,7 +130,7 @@ const Footer = () => {
           </div>
         </div>
         <hr className="my-5" />
-        <div className="flex flex-col sm:flex-row justify-between">
+        <div className="flex flex-col md:flex-row justify-between">
           <div className="flex pb-5 justify-center">
             <FaFacebook
               size={25}
