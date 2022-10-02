@@ -1,5 +1,6 @@
 import Categories from "./components/Categories";
 import Food from "./components/Food";
+import Footer from "./components/Footer";
 import HeadlineCards from "./components/HeadlineCards";
 import HeroImage from "./components/HeroImage";
 import NavBar from "./components/NavBar";
@@ -12,7 +13,7 @@ function App() {
       <HeadlineCards />
       <Food />
       <Categories />
-      <div className="py-20 my-24 bg-black">ok</div>
+      <Footer />
     </div>
   );
 }

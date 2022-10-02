@@ -106,7 +106,7 @@ const NavBar = () => {
             {links.map(({ id, icon, title }) => (
               <li key={id}>
                 <a
-                  href=""
+                  href="https://google.com"
                   className="flex items-center p-2 mx-2 hover:bg-slate-200 duration-200 hover:rounded-md"
                 >
                   {icon}
